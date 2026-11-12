@@ -45,6 +45,11 @@ botao.addEventListener("click", function () {
     erro.textContent = "Digite seu nome.";
     return;
   }
+  if (campoData.value === "") {
+    erro.textContent = "Escolha sua data de nascimento.";
+    return;
+  }
+
   const pessoa = { nome: campoNome.value, data: campoData.value };
   const pessoas = carregarPessoas();
   pessoas.push(pessoa);
