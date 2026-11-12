@@ -11,4 +11,7 @@ Site simples onde a pessoa cadastra o nome e a data de nascimento e vê quem mai
 Os cadastros ficam salvos apenas no navegador de quem usa.
 
 ## Tecnologias
+feature/1-validar-campos
 HTML, CSS e JavaScript.
+HTML, CSS e JavaScript.
+main
