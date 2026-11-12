@@ -2,6 +2,7 @@ const campoNome = document.getElementById("nome");
 const campoData = document.getElementById("data");
 const botao = document.getElementById("cadastrar");
 const resultado = document.getElementById("resultado");
+const erro = document.getElementById("erro");
 
 function carregarPessoas() {
   try {
@@ -39,6 +40,16 @@ function mostrarMesmoAno(pessoa, pessoas) {
 }
 
 botao.addEventListener("click", function () {
+    erro.textContent = "";
+  if (campoNome.value.trim() === "") {
+    erro.textContent = "Digite seu nome.";
+    return;
+  }
+  if (campoData.value === "") {
+    erro.textContent = "Escolha sua data de nascimento.";
+    return;
+  }
+
   const pessoa = { nome: campoNome.value, data: campoData.value };
   const pessoas = carregarPessoas();
   pessoas.push(pessoa);

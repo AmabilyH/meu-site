@@ -76,3 +76,9 @@ button:hover { background: #24504c; }
 }
 
 .data { color: #4d6663; }
+
+.erro {
+  color: #b3261e;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
